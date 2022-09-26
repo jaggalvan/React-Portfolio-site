@@ -30,9 +30,15 @@ const Home = ({ theme, changeTheme }) => {
               options={{
                 strings: [
                   "Full Stack Software Developer",
-                  "MERN Stack Developer",
-                  "Web Developer",
-                  "UI/UX Designer",
+                  "MERN Stack",
+                  "Typescript",
+                  "React Js",
+                  "Redux-Toolkit",
+                  "AWS S3",
+                  "Unit testing (Mocha and Chai)",
+                  "Node js, Express Js"
+                  
+                  
                 ],
                 autoStart: true,
                 loop: true,

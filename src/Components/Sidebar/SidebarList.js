@@ -93,7 +93,7 @@ const SidebarList = ({ expandSidebar }) => {
                 <FcTodoList size={25} /> Projects
               </Link>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <Link
                 to="testimonial"
                 spy={true}
@@ -103,7 +103,8 @@ const SidebarList = ({ expandSidebar }) => {
               >
                 <FcSalesPerformance size={25} /> Testimonial
               </Link>
-            </li>
+            </li> */}
+{/*             
             <li className="nav-item">
               <Link
                 to="contactsection"
@@ -114,7 +115,8 @@ const SidebarList = ({ expandSidebar }) => {
               >
                 <FcContacts size={25} /> Contact
               </Link>
-            </li>
+            </li> */}
+
           </ul>
         </div>
       ) : (
@@ -187,7 +189,7 @@ const SidebarList = ({ expandSidebar }) => {
                 <FcTodoList size={25} />
               </Link>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <Link
                 to="testimonial"
                 spy={true}
@@ -197,8 +199,9 @@ const SidebarList = ({ expandSidebar }) => {
               >
                 <FcSalesPerformance size={25} />
               </Link>
-            </li>
-            <li className="nav-item">
+            </li> */}
+
+            {/* <li className="nav-item">
               <Link
                 to="contactsection"
                 spy={true}
@@ -208,7 +211,8 @@ const SidebarList = ({ expandSidebar }) => {
               >
                 <FcContacts size={25} />
               </Link>
-            </li>
+            </li> */}
+
           </ul>
         </div>
       )}
