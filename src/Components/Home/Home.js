@@ -75,7 +75,7 @@ const Home = ({ theme, changeTheme }) => {
             </div>
 
             <div className="get-resume-button">
-              <a href={MyCv} download="Yazdani_cv.pdf">
+              <a href={MyCv} download="Yazdani_cv.pdf" target="_blank">
                 Get Resume
               </a>
             </div>
