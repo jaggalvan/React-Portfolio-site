@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./WorkExperience.css";
 import {
   VerticalTimeline,
@@ -11,134 +11,55 @@ import { MdGroupWork } from "react-icons/md";
 const WorkExperience = () => {
   const data = [
     {
-      companyname: "Google",
-      position: "Full Stack Developer",
-      des: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. ",
-      year: "2021-2022",
+      companyname: "Berylls Group GmbH - Berlin, Germany",
+      position: "Full-stack software developer",
+      des: "I collaborated on the Trackwise SaaS application where I developed a frontend application using React js with Typescript, REST API, Chart.js, and Material UI. I did unit testing for the backend API using mocha and chai. I also usedStorybook to document React component.",
+      year: "01/04/2022 – 30/09/2022",
+      show: false,
       techskills: [
-        {
-          techname: "Node JS",
-        },
-        {
-          techname: "Express JS",
-        },
         {
           techname: "React JS",
         },
         {
-          techname: "Material UI",
-        },
-      ],
-    },
-
-    {
-      companyname: "Facebook",
-      position: "Full Stack Developer",
-      des: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. ",
-      year: "2020-2021",
-
-      techskills: [
-        {
-          techname: "Node JS",
-        },
-        {
-          techname: "Express JS",
-        },
-        {
-          techname: "Vue JS",
-        },
-        {
-          techname: "Material UI",
-        },
-      ],
-    },
-
-    {
-      companyname: "Youtube",
-      position: "Full Stack Developer",
-      des: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. ",
-      year: "2019-2020",
-
-      techskills: [
-        {
-          techname: "Django",
-        },
-        {
-          techname: "Express JS",
-        },
-        {
-          techname: "Vue JS",
-        },
-        {
-          techname: "Material UI",
-        },
-      ],
-    },
-
-    {
-      companyname: "Microsoft",
-      position: "Full Stack Developer",
-      des: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. ",
-      year: "2018-2019",
-
-      techskills: [
-        {
-          techname: "Python",
-        },
-        {
-          techname: "Express JS",
-        },
-        {
-          techname: "Vue JS",
-        },
-        {
-          techname: "Material UI",
-        },
-      ],
-    },
-
-    {
-      companyname: "WhatsApp",
-      position: "Full Stack Developer",
-      des: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. ",
-      year: "2017-2018",
-
-      techskills: [
-        {
           techname: "Typescript",
         },
         {
-          techname: "Express JS",
+          techname: "REST API",
         },
         {
-          techname: "Next JS",
+          techname: "Chart.JS",
         },
         {
           techname: "Material UI",
+        },
+        {
+          techname: "Mocha and chai",
+        },
+        {
+          techname: "Storybook",
         },
       ],
     },
 
     {
-      companyname: "Instagram",
-      position: "Full Stack Developer",
-      des: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. ",
-      year: "2016-2017",
+      companyname: "Udemy",
+      position: "Udemy Instructor",
+      des: "Since May 2018 I have been teaching on Udemy. Over 100k+ Students are learning from my courses. I teach Software development and UI/UX Design.",
+      year: "01/05/2018 – CURRENT",
+      show: true,
+      link: "https://www.udemy.com/user/yazdani-chowdhury/",
 
-      techskills: [
-        {
-          techname: "Javascript",
-        },
-        {
-          techname: "Express JS",
-        },
-        {
-          techname: "Next JS",
-        },
-        {
-          techname: "Material UI",
-        },
-      ],
+      techskills: [],
+    },
+
+    {
+      companyname: "Skillshare",
+      position: "Skillshare Instructor",
+      des: "Since May 2018 I have been teaching on Skillshare. I have created several courses on Skillshare. I teach Software development and UI/UX Design.",
+      year: "01/05/2018 – CURRENT",
+      show: true,
+      link: "https://www.skillshare.com/profile/Yazdani-Chowdhury/8145130",
+      techskills: [],
     },
   ];
 
@@ -191,13 +112,18 @@ const WorkExperience = () => {
               </div>
 
               <p>{item.des}</p>
+
+              {item.show === true && (
+                <div className="view_button">
+                  <a href={item.link} target="_blank">
+                    Visit My Courses
+                  </a>
+                </div>
+              )}
             </VerticalTimelineElement>
           ))}
         </VerticalTimeline>
       </div>
-
-
-      
     </div>
   );
 };

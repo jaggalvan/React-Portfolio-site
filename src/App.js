@@ -10,6 +10,7 @@ import Contact from "./Components/Contact/Contact";
 import ScrollToTop from "react-scroll-to-top";
 import "./App.css";
 import NavbarMobileView from "./Components/Sidebar/NavbarMobileView";
+import WorkExperienceCard from "./Components/WorkExperience/WorkExperienceCard";
 
 export const ThemeContext = createContext(null);
 
@@ -23,16 +24,16 @@ const App = () => {
   return (
     <ThemeContext.Provider value={{ theme, changeTheme }}>
       <div id={theme}>
-        <NavbarMobileView changeTheme={changeTheme} theme={theme}/>
+        <NavbarMobileView changeTheme={changeTheme} theme={theme} />
 
-        <Sidebar changeTheme={changeTheme} theme={theme}/>
+        <Sidebar changeTheme={changeTheme} theme={theme} />
         <About />
         <WorkExperience />
         <TechStack />
         <Education />
         <Project />
-        <Testimonial />
-        <Contact />
+        {/* <Testimonial /> */}
+        {/* <Contact /> */}
       </div>
 
       <ScrollToTop

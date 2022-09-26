@@ -11,7 +11,6 @@ const ProjectList = ({ name, des, projectlink, techused }) => {
     setShow(!show);
   };
 
-
   const colors = [
     "#1F618D",
     "#FF8042",
@@ -36,22 +35,28 @@ const ProjectList = ({ name, des, projectlink, techused }) => {
         <div className="description">
           {show ? <p>{des}</p> : <p>{des.substring(0, 150)}...</p>}
         </div>
+        <h5>Technologies/Tools I used in this project</h5>
 
         <div className="row">
           {techused &&
             techused.map((tech, index) => (
               <div className="col-xl-3 col-lg-3 col-md-6 col-sm-12" key={index}>
-                <div className="tech-used-in-project" >
-                  <p style={{backgroundColor:colors[index]}}>{tech.techname}</p>
+                <div className="tech-used-in-project">
+                  <p style={{ backgroundColor: colors[index] }}>
+                    {tech.techname}
+                  </p>
                 </div>
               </div>
             ))}
         </div>
 
-        <div className="live-demo-button">
-          <a target="_" href={projectlink}>
-            Live Demo
-          </a>
+        <div style={{ display: "flex" }}>
+          <div className="live-demo-button">
+            <a target="_" href={projectlink}>
+              Live Demo
+            </a>
+          </div>
+        
         </div>
       </div>
     </Zoom>

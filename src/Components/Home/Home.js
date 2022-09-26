@@ -24,7 +24,7 @@ const Home = ({ theme, changeTheme }) => {
 
       <div className="container home-content">
         <Fade right>
-          <h1>Hi I'm Yazdani Chowdhury</h1>
+          <h1>Hi I'm MD NOOR E YAZDANI CHOWDHURY</h1>
           <h3>
             <Typewriter
               options={{
@@ -44,7 +44,7 @@ const Home = ({ theme, changeTheme }) => {
 
         <Fade bottom>
           <div className="button-for-action">
-            <Link
+            {/* <Link
               to="contactsection"
               spy={true}
               smooth={true}
@@ -52,7 +52,22 @@ const Home = ({ theme, changeTheme }) => {
               offset={-100}
             >
               <div className="hire-me-button">Hire Me</div>
-            </Link>
+            </Link> */}
+            <div className="get-resume-button">
+              <a href="https://github.com/Yazdani1" target="_blank">
+                Github Profile
+              </a>
+            </div>
+
+            <div className="get-resume-button">
+              <a
+                href="https://www.linkedin.com/in/yazdani-chowdhury-650313110"
+                target="_blank"
+              >
+                LinkedIn Profile
+              </a>
+            </div>
+
             <div className="get-resume-button">
               <a href={MyCv} download="Yazdani_cv.pdf">
                 Get Resume

@@ -27,16 +27,19 @@ const About = () => {
 
             <Fade right>
               <p>
-                It is a long established fact that a reader will be distracted
-                by the readable content of a page when looking at its layout.
-                The point of using Lorem Ipsum is that it has a more-or-less
-                normal distribution of letters, as opposed to using 'Content
-                here, content here', making it look like readable English. Many
-                desktop publishing packages and web page editors now use Lorem
-                Ipsum as their default model text, and a search for 'lorem
-                ipsum' will uncover many web sites still in their infancy.
-                Various versions have evolved over the years, sometimes by
-                accident, sometimes on purpose (injected humour and the like).
+                I am a full-stack software developer (MERN Stack), Udemy, and
+                Skillshare Instructor. I did my bachelor's in Software
+                Engineering and currently, I am doing my Master's in Data
+                Science at TU Dortmund University, Germany. I have worked in
+                several international software companies where I have learned
+                enough knowledge about software development and worked on
+                several large-scale software.
+              </p>
+              <p>
+                I have been teaching programming, web development, mobile
+                development, and UI/UX on Udemy and skillshare since 2018. I
+                taught over 100k+ students on Udemy from around the world. I
+                love to share my knowledge with others.
               </p>
             </Fade>
           </div>
