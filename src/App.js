@@ -1,16 +1,14 @@
 import React, { useState, createContext } from "react";
-import Sidebar from "./Components/Sidebar/Sidebar";
 import About from "./Components/About/About";
 import TechStack from "./Components/TechStack/TechStack";
 import Project from "./Components/Projects/Project";
 import WorkExperience from "./Components/WorkExperience/WorkExperience";
 import Education from "./Components/Education/Education";
-import Testimonial from "./Components/Testimonial/Testimonial";
-import Contact from "./Components/Contact/Contact";
 import ScrollToTop from "react-scroll-to-top";
 import "./App.css";
 import NavbarMobileView from "./Components/Sidebar/NavbarMobileView";
 import Home from "./Components/Home/HomeSection.js";
+import Navbar from "./Components/Navbar/Navbar";
 
 export const ThemeContext = createContext(null);
 
@@ -25,7 +23,9 @@ const App = () => {
     <ThemeContext.Provider value={{ theme, changeTheme }}>
       <div id={theme}>
 
-        
+        <Navbar/>
+
+
         <NavbarMobileView changeTheme={changeTheme} theme={theme} />
 
         <Home changeTheme={changeTheme} theme={theme}/>
