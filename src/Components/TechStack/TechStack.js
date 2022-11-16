@@ -127,6 +127,10 @@ const TechStack = () => {
     "#FFBB24",
     "#FF1042",
     "#FF1042",
+    "#FFBB28",
+    "#FF8042",
+    "#001CCE",
+    "#00C79F",
   ];
 
   const [showMoreTechStack, setShowMoreTechStack] = useState(9);
