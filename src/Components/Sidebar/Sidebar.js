@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 import "./Sidebar.css";
-import Home from "../Home/Home";
 
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 import SidebarList from "./SidebarList";
 
 const Sidebar = ({ theme, changeTheme }) => {
-  const [expandSidebar, setExpandSidebar] = useState(true);
+  const [expandSidebar, setExpandSidebar] = useState(false);
 
   const handleExpandClick = () => {
     setExpandSidebar(!expandSidebar);
@@ -33,9 +32,9 @@ const Sidebar = ({ theme, changeTheme }) => {
 
       </div>
 
-      <div className="container">
+      {/* <div className="container">
         <Home changeTheme={changeTheme} theme={theme}/>
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -1,6 +1,7 @@
 .home{
     height: 400px;
     color: white;
+    background-color: #FF854C;
 }
 
 .home-content{
@@ -102,7 +103,7 @@
 }
 
 
-@media (max-width:1000px) {
+@media (max-width:1400px) {
     .theme-change{
         display: none;
     }

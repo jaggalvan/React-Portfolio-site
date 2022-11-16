@@ -9,7 +9,10 @@ import { Link } from "react-scroll";
 
 const Home = ({ theme, changeTheme }) => {
   return (
-    <div className="container-fluid home" id="home">
+
+    <div className="container-fluid home">
+
+    <div className="container" id="home">
       <div className="theme-change" onClick={changeTheme}>
         {theme === "light" ? (
           <p>
@@ -83,6 +86,9 @@ const Home = ({ theme, changeTheme }) => {
         </Fade>
       </div>
     </div>
+
+    </div>
+
   );
 };
 
