@@ -11,34 +11,15 @@
 
 .home-content h3{
     margin-top: 30px;
-    color: rgb(242, 227, 13);
+    color: white
 }
 
 .button-for-action{
     display: flex;
 }
 
-.hire-me-button{
-    background-color: #FF854C;
-    text-align: center;
-    width: 180px;
-    padding: 10px;
-    border-radius: 90px;
-    cursor: pointer;
-    margin-top: 10px;
-    border: 2px solid white;
-    font-size: 17px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-.hire-me-button:hover{
-    background-color: white;
-    width: 250px;
-    color: black;
-    transition-duration: 1s;
-}
-
 .get-resume-button{
-    background-color: orangered;
+    background-color: black;
     text-align: center;
     width: 180px;
     padding: 10px;

@@ -40,77 +40,43 @@ const Navbar = () => {
         </li>
         <li className="nav-item">
           <Link
-            to="services"
+            to="workexperience"
             spy={true}
             smooth={true}
             offset={-100}
             duration={100}
           >
-            Service
+           Work Experience
           </Link>
         </li>
 
         <li className="nav-item">
           <Link
-            to="career"
+            to="techstack"
             spy={true}
             smooth={true}
             offset={-100}
             duration={100}
           >
-            Career
+            Tech Stack
           </Link>
         </li>
 
         <li className="nav-item">
           <Link
-            to="video"
+            to="education"
             spy={true}
             smooth={true}
             offset={-100}
             duration={100}
           >
-            Video
+            Education
           </Link>
         </li>
 
         <li className="nav-item">
-          <Link to="team" spy={true} smooth={true} offset={-100} duration={100}>
-            Team
-          </Link>
-        </li>
-        <li className="nav-item">
-          <Link
-            to="testimonial"
-            spy={true}
-            smooth={true}
-            offset={-100}
-            duration={100}
-          >
-            Testimonial
-          </Link>
-        </li>
-        <li className="nav-item">
-          <Link
-            to="feedback"
-            spy={true}
-            smooth={true}
-            offset={-100}
-            duration={100}
-          >
-            Feedback
-          </Link>
-        </li>
-
-        <li className="nav-item">
-          <Link
-            to="contact"
-            spy={true}
-            smooth={true}
-            offset={-100}
-            duration={100}
-          >
-            Contact
+          <Link to="project" spy={true} smooth={true} offset={-100} duration={100}>
+          Projects
           </Link>
         </li>
 
