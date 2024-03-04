@@ -50,7 +50,7 @@ const ProjectList = ({ name, des, projectlink, techused }) => {
 
         <div className="live-demo-button">
           <a target="_" href={projectlink}>
-            Live Demo
+            Link Proyecto
           </a>
         </div>
       </div>

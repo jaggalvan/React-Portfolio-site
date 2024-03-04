@@ -7,57 +7,13 @@ import Zoom from "react-reveal/Zoom";
 
 const Testimonial = () => {
   const data = [
-    {
+   /*  {
       name: "Emily",
       position: "CEO",
       des: "Normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
       img: "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    },
-    {
-      name: "Michel",
-      position: "Product Manager",
-      des: "He was good at his work. He worked on several complex project",
-      img: "https://images.pexels.com/photos/2589409/pexels-photo-2589409.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    },
-    {
-      name: "Charlote",
-      position: "Marketing Manager",
-      des: "He was good at his work. He worked on several complex project",
-      img: "https://images.pexels.com/photos/3757004/pexels-photo-3757004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    },
-    {
-      name: "Muller",
-      position: "Partner",
-      des: "He was good at his work. He worked on several complex project",
-      img: "https://images.pexels.com/photos/2776582/pexels-photo-2776582.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    },
-    {
-      name: "Jon Doe",
-      position: "CTO",
-      des: "He was good at his work. He worked on several complex project",
-      img: "https://images.pexels.com/photos/4498876/pexels-photo-4498876.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    },
-
-    {
-      name: "Martin",
-      position: "Senior Developer",
-      des: "He was good at his work. He worked on several complex project",
-      img: "https://images.pexels.com/photos/884422/pexels-photo-884422.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    },
-
-    {
-      name: "David",
-      position: "Full Stack Developer",
-      des: "He was good at his work. He worked on several complex project",
-      img: "https://images.pexels.com/photos/2962144/pexels-photo-2962144.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    },
-
-    {
-      name: "Jonson",
-      position: "UI/UX Designer",
-      des: "He was good at his work. He worked on several complex project",
-      img: "https://images.pexels.com/photos/11791288/pexels-photo-11791288.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    },
+    }*/
+    
   ];
 
   var settings = {
@@ -117,7 +73,7 @@ const Testimonial = () => {
   return (
     <div className="container testimonial-section" id="testimonial">
       <div className="section-title">
-        <h5>Testimonial</h5>
+        <h5></h5>
         <span className="line"></span>
       </div>
 

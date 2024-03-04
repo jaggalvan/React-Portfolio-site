@@ -24,15 +24,16 @@ const Home = ({ theme, changeTheme }) => {
 
       <div className="container home-content">
         <Fade right>
-          <h1>Hi I'm Yazdani Chowdhury</h1>
+          <h1>Mi nombre es José Adrián Galván García</h1>
           <h3>
             <Typewriter
               options={{
                 strings: [
-                  "Full Stack Software Developer",
-                  "MERN Stack Developer",
-                  "Web Developer",
-                  "UI/UX Designer",
+                  "Analista De Datos",
+                  "Desarrollador Web",
+                  "Cientifico De Datos",
+                  "Desarrollo De sistemas",
+                  "Soporte Técnico",
                 ],
                 autoStart: true,
                 loop: true,
@@ -51,11 +52,11 @@ const Home = ({ theme, changeTheme }) => {
               duration={100}
               offset={-100}
             >
-              <div className="hire-me-button">Hire Me</div>
+              <div className="hire-me-button">Contactame</div>
             </Link>
             <div className="get-resume-button">
-              <a href={MyCv} download="Yazdani_cv.pdf">
-                Get Resume
+              <a href={MyCv} download="José_Adrián_cv.pdf">
+                Curriculum Vitae PDF
               </a>
             </div>
           </div>

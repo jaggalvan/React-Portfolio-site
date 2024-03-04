@@ -20,23 +20,26 @@ const About = () => {
           <div className="about-details">
             <Flip left>
               <div className="about-title">
-                <h5>About Me</h5>
+                <h5>Resumen</h5>
                 <span className="line"></span>
               </div>
             </Flip>
 
             <Fade right>
               <p>
-                It is a long established fact that a reader will be distracted
-                by the readable content of a page when looking at its layout.
-                The point of using Lorem Ipsum is that it has a more-or-less
-                normal distribution of letters, as opposed to using 'Content
-                here, content here', making it look like readable English. Many
-                desktop publishing packages and web page editors now use Lorem
-                Ipsum as their default model text, and a search for 'lorem
-                ipsum' will uncover many web sites still in their infancy.
-                Various versions have evolved over the years, sometimes by
-                accident, sometimes on purpose (injected humour and the like).
+              Profesional en el Área de Sistemas
+Computacionales con cerca de 18 años
+de experiencia ocupando posiciones
+como ejecutivo de desarrollo de
+sistemas, Soporte técnico, Sistemas
+informaticos, Encargado de sistemas
+enfocados a resultados basado en mi
+capacidad de análisis, habilidades de
+programación, trabajo ene quipo y
+desarrollo de estrategias, he logrado la
+administración efectiva del
+departamento de sistemas, busco
+consolidarme en mi profesión
               </p>
             </Fade>
           </div>

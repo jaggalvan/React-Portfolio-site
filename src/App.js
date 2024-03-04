@@ -22,7 +22,7 @@ const App = () => {
 
   return (
     <ThemeContext.Provider value={{ theme, changeTheme }}>
-      <div id={theme}>
+      <div id={theme} >
         <NavbarMobileView changeTheme={changeTheme} theme={theme}/>
 
         <Sidebar changeTheme={changeTheme} theme={theme}/>
@@ -31,7 +31,7 @@ const App = () => {
         <TechStack />
         <Education />
         <Project />
-        <Testimonial />
+       {/* <Testimonial />*/}
         <Contact />
       </div>
 

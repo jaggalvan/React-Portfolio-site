@@ -34,7 +34,7 @@ const SidebarList = ({ expandSidebar }) => {
                 duration={100}
                 offset={-100}
               >
-                <FcHome size={25} /> Home
+                <FcHome size={25} /> Inicio
               </Link>
             </li>
 
@@ -46,7 +46,7 @@ const SidebarList = ({ expandSidebar }) => {
                 duration={100}
                 offset={-100}
               >
-                <FcNightPortrait size={25} /> About
+                <FcNightPortrait size={25} /> Introducción
               </Link>
             </li>
             <li className="nav-item">
@@ -57,7 +57,7 @@ const SidebarList = ({ expandSidebar }) => {
                 duration={100}
                 offset={-100}
               >
-                <FcFactory size={25} /> Work Experience
+                <FcFactory size={25} />Trabajos
               </Link>
             </li>
             <li className="nav-item">
@@ -68,7 +68,7 @@ const SidebarList = ({ expandSidebar }) => {
                 duration={100}
                 offset={-100}
               >
-                <MdBiotech size={25} color="orange" /> Tech Stack
+                <MdBiotech size={25} color="orange" /> Certificados
               </Link>
             </li>
             <li className="nav-item">
@@ -79,7 +79,7 @@ const SidebarList = ({ expandSidebar }) => {
                 duration={100}
                 offset={-100}
               >
-                <MdCastForEducation size={25} color="yellow" /> Education
+                <MdCastForEducation size={25} color="yellow" /> Educación
               </Link>
             </li>
             <li className="nav-item">
@@ -90,10 +90,10 @@ const SidebarList = ({ expandSidebar }) => {
                 duration={100}
                 offset={-100}
               >
-                <FcTodoList size={25} /> Projects
+                <FcTodoList size={25} /> Projectos
               </Link>
             </li>
-            <li className="nav-item">
+          {/*   <li className="nav-item">
               <Link
                 to="testimonial"
                 spy={true}
@@ -101,9 +101,9 @@ const SidebarList = ({ expandSidebar }) => {
                 duration={100}
                 offset={-100}
               >
-                <FcSalesPerformance size={25} /> Testimonial
+                <FcSalesPerformance size={25} /> Lenguajes
               </Link>
-            </li>
+            </li>*/}
             <li className="nav-item">
               <Link
                 to="contactsection"
@@ -112,7 +112,7 @@ const SidebarList = ({ expandSidebar }) => {
                 duration={100}
                 offset={-100}
               >
-                <FcContacts size={25} /> Contact
+                <FcContacts size={25} /> Contacto
               </Link>
             </li>
           </ul>
