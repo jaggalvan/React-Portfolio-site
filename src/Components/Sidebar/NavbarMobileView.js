@@ -101,7 +101,7 @@ const NavbarMobileView = ({ theme, changeTheme }) => {
                 <FcTodoList size={25} /> Projects
               </Link>
             </li>
-            <li className="nav-item-mobileview">
+            {/* <li className="nav-item-mobileview">
               <Link
                 to="testimonial"
                 spy={true}
@@ -111,9 +111,9 @@ const NavbarMobileView = ({ theme, changeTheme }) => {
               >
                 <FcSalesPerformance size={25} /> Testimonial
               </Link>
-            </li>
+            </li> */}
 
-            <li className="nav-item-mobileview">
+            {/* <li className="nav-item-mobileview">
               <Link
                 to="contactsection"
                 spy={true}
@@ -123,7 +123,7 @@ const NavbarMobileView = ({ theme, changeTheme }) => {
               >
                 <FcContacts size={25} /> Contact
               </Link>
-            </li>
+            </li> */}
 
             <li className="nav-item-mobileview">
 

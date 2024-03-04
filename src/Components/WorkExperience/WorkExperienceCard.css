@@ -1,0 +1,19 @@
+.view_button{
+    border-radius: 20px;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    margin-top: 25px;
+    width: fit-content;
+    cursor: pointer;
+}
+.view_button a{
+    text-decoration: none;
+    color: white;
+
+}
+
+.view_button:hover{
+    background-color: orangered;
+    
+}

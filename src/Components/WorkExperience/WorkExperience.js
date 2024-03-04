@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./WorkExperience.css";
 import {
   VerticalTimeline,
@@ -11,6 +11,7 @@ import { MdGroupWork } from "react-icons/md";
 const WorkExperience = () => {
   const data = [
     {
+<<<<<<< HEAD
       companyname: "KSP Technology para HDI Seguros",
       position: "Desarrollo De Sistemas",
       des: "Optmización de Store Procedure (Sybase), Creación de modulos C#",
@@ -60,14 +61,40 @@ const WorkExperience = () => {
         },
         {
           techname: "Redes",
+=======
+      companyname: "Berylls Group GmbH - Berlin, Germany",
+      position: "Full-stack software developer",
+      des: "I collaborated on the Trackwise SaaS application where I developed a frontend application using React js with Typescript, REST API, Chart.js, and Material UI. I did unit testing for the backend API using mocha and chai. I also usedStorybook to document React component.",
+      year: "01/04/2022 – 30/09/2022",
+      show: false,
+      techskills: [
+        {
+          techname: "React JS",
+        },
+        {
+          techname: "Typescript",
+        },
+        {
+          techname: "REST API",
+        },
+        {
+          techname: "Chart.JS",
+>>>>>>> b327d9bf7e4fcae3f6310a751e04f470280b35bf
         },
         {
           techname: "Administación de computadoras",
+        },
+        {
+          techname: "Mocha and chai",
+        },
+        {
+          techname: "Storybook",
         },
       ],
     },
 
     {
+<<<<<<< HEAD
       companyname: "Acremex",
       position: "Ejecutivo De Desarrollo De Sistemas",
       des: "Desarrollo de modulos de JurisWeb y modulos de Administrador de Documentos digitalizados de los socios ",
@@ -87,16 +114,36 @@ const WorkExperience = () => {
           techname: "MySQL",
         },
       ],
+=======
+      companyname: "Udemy",
+      position: "Udemy Instructor",
+      des: "Since May 2018 I have been teaching on Udemy. Over 100k+ Students are learning from my courses. I teach Software development and UI/UX Design.",
+      year: "01/05/2018 – CURRENT",
+      show: true,
+      link: "https://www.udemy.com/user/yazdani-chowdhury/",
+
+      techskills: [],
+    },
+
+    {
+      companyname: "Skillshare",
+      position: "Skillshare Instructor",
+      des: "Since May 2018 I have been teaching on Skillshare. I have created several courses on Skillshare. I teach Software development and UI/UX Design.",
+      year: "01/05/2018 – CURRENT",
+      show: true,
+      link: "https://www.skillshare.com/profile/Yazdani-Chowdhury/8145130",
+      techskills: [],
+>>>>>>> b327d9bf7e4fcae3f6310a751e04f470280b35bf
     },
 
  
   ];
 
   const colors = [
-    "#800000",
-    "#FF8042",
+    // "#800000",
+    // "#FF8042",
     "#001CCE",
-    "#4B088A",
+    // "#4B088A",
     "#FF6347",
     "#FF1042",
   ];
@@ -141,13 +188,18 @@ const WorkExperience = () => {
               </div>
 
               <p>{item.des}</p>
+
+              {item.show === true && (
+                <div className="view_button">
+                  <a href={item.link} target="_blank">
+                    Visit My Courses
+                  </a>
+                </div>
+              )}
             </VerticalTimelineElement>
           ))}
         </VerticalTimeline>
       </div>
-
-
-      
     </div>
   );
 };

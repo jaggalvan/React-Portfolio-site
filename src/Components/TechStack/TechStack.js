@@ -8,6 +8,7 @@ const TechStack = () => {
       name: "IBM - Developing Front End Apps with React",
     },
     {
+<<<<<<< HEAD
       name: "IBM - Back-end Application Development with Node.js and Express (Proceso)",
     },
     {
@@ -25,6 +26,97 @@ const TechStack = () => {
     {
       name: "Google Business Intelligence",
     },
+=======
+      name: "Typescript",
+    },
+    {
+      name: "Javascript",
+    },
+    {
+      name: "React JS",
+    },
+    {
+      name: "Redux-Toolkit",
+    },
+
+    {
+      name: "Context API",
+    },
+    {
+      name: "Node JS",
+    },
+    {
+      name: "Express JS",
+    },
+    {
+      name: "MongoDB",
+    },
+    {
+      name: "AWS S3",
+    },
+    {
+      name: "AWS SES",
+    },
+    {
+      name: "Unit testing (Mocha and Chai)",
+    },
+    {
+      name: "Jest",
+    },
+    {
+      name: "Git and Github",
+    },
+    {
+      name: "Bootstrap",
+    },
+    {
+      name: "REST API",
+    },
+    {
+      name: "Chart.JS",
+    },
+    {
+      name: "Material UI",
+    },
+    {
+      name: "HTML",
+    },
+    {
+      name: "CSS",
+    },
+    {
+      name: "SCSS",
+    },
+    {
+      name: "Storybook",
+    },
+    {
+      name: "JIRA Board",
+    },
+    {
+      name: "UI/UX Design",
+    },
+    {
+      name: "Figma",
+    },
+    {
+      name: "Adobe xd",
+    },
+  
+    {
+      name: "Vercel",
+    },
+    {
+      name: "Netlify",
+    },
+    {
+      name: "Heroku",
+    },
+  
+
+
+
+>>>>>>> b327d9bf7e4fcae3f6310a751e04f470280b35bf
 
   ];
 
@@ -44,6 +136,21 @@ const TechStack = () => {
     "#FFBB24",
     "#FF1042",
     "#FF1042",
+    "#585858",
+    "#800000",
+    "#0088FE",
+    "#00C49F",
+    "#FFBB28",
+    "#FF8042",
+    "#001CCE",
+    "#00C79F",
+    "#FFBB24",
+    "#FF1042",
+    "#FF1042",
+    "#FFBB28",
+    "#FF8042",
+    "#001CCE",
+    "#00C79F",
   ];
 
   const [showMoreTechStack, setShowMoreTechStack] = useState(9);
@@ -60,7 +167,7 @@ const TechStack = () => {
       </div>
 
       <div className="row">
-        {data.slice(0, showMoreTechStack).map((item, index) => (
+        {data.map((item, index) => (
           <Fade right>
             <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12" key={index}>
               <div
@@ -83,13 +190,13 @@ const TechStack = () => {
         ))}
       </div>
 
-      {showMoreTechStack >= data.length ? null : (
+      {/* {showMoreTechStack >= data.length ? null : (
         <Zoom>
           <span className="load-more-tech-stack" onClick={loadMore}>
             Load More
           </span>
         </Zoom>
-      )}
+      )} */}
     </div>
   );
 };

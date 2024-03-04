@@ -2,17 +2,16 @@ import React from "react";
 import "./Education.css";
 import { FaGraduationCap } from "react-icons/fa";
 
-
-
 import {
-    VerticalTimeline,
-    VerticalTimelineElement,
-  } from "react-vertical-timeline-component";
-  import "react-vertical-timeline-component/style.min.css";
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css";
 
 const Education = () => {
   const data = [
     {
+<<<<<<< HEAD
       name: "Instituto Tecnologico Nacional De México Campus León, CONACYT",
       degree: "Maestría En Ciencias De La Computación (inteligencia Artificial)",
       year: "2021-2023",
@@ -35,30 +34,33 @@ const Education = () => {
       degree: "Preparatoria",
       year: "1990-1993",
       des: "Una preparatoria en máquinas de combustión interna podría ofrecer un enfoque especializado en mecánica automotriz y tecnologías relacionada",
+=======
+      name: "Tu Dortmund University,Germany",
+      degree: "Masters in Data Science",
+      year: "01/09/2020 – CURRENT",
+      des: "Currently, I am doing my Master's in Data Science at TU Dortmund University, Germany",
+    },
+    {
+      name: "Daffodil International University,Bangladesh",
+      degree: "B.sc in Software Engineering",
+      year: "04/01/2015 – 18/12/2018",
+      des: "I did my bachelor's degree in Software Engineering",
+
+>>>>>>> b327d9bf7e4fcae3f6310a751e04f470280b35bf
     },
   ];
 
-
-  const colors = [
-    "#001CCE",
-    "#4B088A",
-    "#FE2EF7",
-    "#FF1042",
-  ];
+  const colors = ["#001CCE", "#4B088A", "#FE2EF7", "#FF1042"];
 
   return (
     <div className="container education-section" id="education">
-
       <div className="section-title">
         <h5>Educación</h5>
         <span className="line"></span>
       </div>
 
-
       <div className="timeline-section">
-
         <VerticalTimeline lineColor="#FF1042">
-
           {data.map((item, index) => (
             <VerticalTimelineElement
               className="vertical-timeline-element--work"
@@ -69,21 +71,19 @@ const Education = () => {
               iconStyle={{ background: colors[index], color: "#fff" }}
               icon={<FaGraduationCap />}
             >
-              <h3 className="vertical-timeline-element-title">
-                {item.name}
-              </h3>
-              <h5 className="vertical-timeline-element-subtitle" style={{color:"yellow"}}>
+              <h3 className="vertical-timeline-element-title">{item.name}</h3>
+              <h5
+                className="vertical-timeline-element-subtitle"
+                style={{ color: "yellow" }}
+              >
                 {item.degree}
               </h5>
-
 
               <p>{item.des}</p>
             </VerticalTimelineElement>
           ))}
         </VerticalTimeline>
       </div>
-
-
     </div>
   );
 };
